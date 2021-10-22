@@ -1,0 +1,149 @@
+@import '~material-design-icons/iconfont/material-icons.css';
+
+
+html {
+  background-color: #eeeeee;
+}
+body {
+  font-family: Roboto, sans-serif;
+  margin: 8px;
+}
+hr {
+  background-color: rgba(0, 0, 0, 0.12);
+  border: none;
+  height: 1px;
+  margin: 0;
+}
+img {
+  height: auto;
+  width: 100%;
+}
+h2{
+  margin-left: 8px;
+}
+.wrapper{
+  cursor: pointer;
+}
+.card {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.87);
+  margin: 8px;
+  min-width: 290px;
+  overflow: hidden;
+  position: relative;
+}
+.card::after {
+  clear: both;
+}
+.card::after,
+.card::before {
+  content: "";
+  display: block;
+}
+
+.content {
+  margin: 10px auto;
+  max-width: 1140px;
+}
+
+.float-right {
+  float: right !important;
+}
+
+.media {
+  position: relative;
+}
+
+[class*="mediaImage"] {
+  height: 0;
+  overflow: hidden;
+}
+
+.mediaImage img {
+  position: absolute;
+}
+
+.mediaImage {
+  margin: 16px;
+  padding-bottom: 80px;
+  width: 80px;
+}
+.mediaImage > img {
+  height: 100%;
+  width: 100%;
+}
+
+.primary-text {
+  font-size: 24px;
+  display: flex;
+}
+.primary-text + .secondary-text,
+.secondary-text + .primary-text {
+  margin-top: calc(
+    24px / 2 / 2
+  ); /* margin-top is 50% of the primary title font size. */
+}
+.primary-title {
+  padding: 24px 16px 16px;
+}
+.primary-title + .supporting-text {
+  padding-top: 0;
+}
+
+.supporting-text {
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 16px;
+}
+.secondary-text {
+	font-size: 14px;
+  line-height: 1.5;
+}
+.arrow-button {
+  border-radius: 50%;
+  background-color: transparent;
+  border-color: yellow;
+  margin-right: 10px;
+  border-style: double;
+  height: 35px;
+  width: 35px;
+  padding: 4px;
+  cursor: pointer;
+}
+.main-divider{
+  margin: 0px 10px;
+}
+.secondary-text-wrapper{
+  display: flex;
+}
+.vertical-divider{
+  width: 1px; 
+  height: 38px;
+   display: inline-block; 
+   margin: 0px 8px;
+}
+.secondary-text-block-2{
+  display: flex;
+}
+.active{
+  margin-left: auto; 
+  color: green;
+  text-transform: uppercase;
+}
+.expired{
+  margin-left: auto; 
+  color: red;
+  text-transform: uppercase;
+}
+.small-screen-image{
+  margin-left: auto;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.active-card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.active-button{
+  background-color: yellow;
+}
